@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Happy Birthday!</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class='birthday'>
+  <div class='birthday_inner'>
+    <div class='birthday_inner__modal'>
+      <div class='modal_image'>
+        <img src='/'>
+      </div>
+      <div class='modal_content'>
+        <h1>Title</h1>
+        <p>Content</p>
+        <button>C'est partiiiiiiii !</button>
+      </div>
+    </div>
+    <div class='birthday_inner__stage stage1'>
+      <div class='intro_cake'>
+        <img class='intro' src='img.png'>
+      </div>
+      <button class='start'>Joyeux anniversaire Maman !! Préparons ensemble ton gâteau d'anniversaire ahah :)</button>
+    </div>
+    <div class='birthday_inner__stage stage2'>
+      <h1>Mélange tes ingrédients !</h1>
+      <h2>Commence par mélanger tous les ingrédients dans un grand bol. Clique sur le bouton mixer ci-dessous jusqu'à ce que le mélange soit bien homogène.</h2>
+      <div class='mix'>
+        <div class='mix_bowl'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bowl.png'>
+        </div>
+        <div class='mix_spoon'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/spoon.png'>
+        </div>
+      </div>
+      <button class='mixer'>Clique ici pour mélanger !</button>
+    </div>
+    <div class='birthday_inner__stage stage3'>
+      <h1>Fais cuire ta base !</h1>
+      <h2>Très bien, mets ce mélange au four. Clique sur le four numérique. Puis mets tes pieds en l'air pendant la cuisson :)</h2>
+      <div class='oven'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven.png'>
+      </div>
+      <div class='tin'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tin.png'>
+      </div>
+    </div>
+    <div class='birthday_inner__stage stage4'>
+      <h1>Faisons le gâteau maintenant</h1>
+      <h2>Construit ton gâteau dans l'ordre que tu souhaites. Cliquez sur un ingrédient pour l'ajouter à ton gâteau. Tu peux ajouter plus d'un ingrédient, par exemple 2 bases à la vanille, mais seulement 5 bases et 6 glaçages.  Clique sur le bouton en bas pour terminer ton gâteau et ajouter tes bougies. Veille à laisser un peu de glaçage sur le dessus de ton gâteau !</h2>
+      <svg id="e1F2ILXGQJi1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="dbd5b022540c4206910bbdd16b9ac48e" export-id="93de9a201585460f815558e788200469" cached="false"><text dx="0" dy="0" font-family="&quot;e1F2ILXGQJi1:::Oswald&quot;" font-size="15" font-weight="400" transform="matrix(2.280542 0 0 2.280547 15.840652 165.443716)" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[
+        Joyeux anniversaire !!!
+        ]]></tspan></text>
+        <style><![CDATA[
+        @font-face {font-family: 'e1F2ILXGQJi1:::Oswald';font-style: normal;font-weight: 400;src: url(data:font/ttf;charset=utf-8;base64,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) format('truetype');}
+        ]]></style>
+      </svg>
+      <div class='options'>
+        <div class='sponges inactive'>
+          <h3>Etages</h3>
+          <h5>
+            <span>0</span>
+            / 5
+          </h5>
+          <div class='item'>
+            <div class='item_inner vanilla'></div>
+            <h4>Vanille</h4>
+          </div>
+          <div class='item'>
+            <div class='item_inner strawberry'></div>
+            <h4>Rose</h4>
+          </div>
+          <div class='item'>
+            <div class='item_inner fruit'></div>
+            <h4>Fruit</h4>
+          </div>
+        </div>
+        <div class='fillings'>
+          <h3>Glaçages</h3>
+          <h5>
+            <span>0</span>
+            / 6
+          </h5>
+          <div class='item'>
+            <div class='item_inner jam'></div>
+            <h4>Confiture</h4>
+          </div>
+          <div class='item'>
+            <div class='item_inner cream'></div>
+            <h4>Crème sucrée</h4>
+          </div>
+          <div class='item'>
+            <div class='item_inner choc'></div>
+            <h4>Chocolat</h4>
+          </div>
+          <div class='item'>
+            <div class='item_inner lemon'></div>
+            <h4>Citron</h4>
+          </div>
+        </div>
+      </div>
+      <div class='cakemake'>
+        <div class='base'></div>
+      </div>
+      <div class='startagain'>Recommence ton gâteau si tu le souhaites !</div>
+      <button class='add'>Ajoute pour finir les bougies !!</button>
+      <button class='sa'>Recommence depuis le début</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
